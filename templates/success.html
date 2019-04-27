@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+
+<body>
+    <p>
+
+        {# 3. Enumerate key-value pairs #}
+        {% for key, value in result.items() %}
+        {% for item in value %}
+        {{ item.physical_line }}
+        {{ item.text }}<br>
+        {% endfor %}
+        {% endfor %}
+    </p>
+</body>
+
+</html>
